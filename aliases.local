@@ -1,0 +1,37 @@
+# Unix
+alias tlf="tail -f"
+alias ln='ln -v'
+alias mkdir='mkdir -p'
+alias ...='../..'
+alias l='ls'
+alias ll='ls -al'
+alias la='ls -AF'
+alias lh='ls -Alh'
+alias -g G='| grep'
+alias -g M='| less'
+alias -g L='| wc -l'
+alias -g ONE="| awk '{ print \$1}'"
+alias e="$EDITOR"
+alias v="$VISUAL"
+
+# Pretty print the path
+alias path="echo $PATH | tr -s ':' '\n'"
+
+# Desktop Programs
+alias xcode="open -a '/Applications/XCode.app'"
+alias safari="open -a safari"
+alias chrome="open -a google\ chrome"
+# alias chromium="open -a chromium"
+alias f='open -a Finder '
+alias fh='open -a Finder .'
+alias textedit='open -a TextEdit'
+alias hex='open -a "Hex Fiend"'
+alias skype='open -a Skype'
+alias slack="open -a '/Applications/Slack.app'"
+alias chess="open -a Chess"
+# Usefull stuff for presentation and seeing dotfiles
+alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+alias showall='defaults write com.apple.finder AppleShowAllFiles YES && killall Finder'
+alias hideall='defaults write com.apple.finder AppleShowAllFiles NO && killall Finder'
+
